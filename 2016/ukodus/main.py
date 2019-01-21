@@ -60,16 +60,7 @@ def coz(dizi):
         sayaclar = [0,0,0,0,0,0,0,0,0];
 
 
-    for i in range(9):
-        for j in range(9):
-            s = dizi[j][i];
-            sayaclar = kontrol(sayaclar ,s);
-            for sayac in sayaclar:
-                if sayac > 1 :
-                    print sayaclar;
-                    return False;
-
-            sayaclar = [0,0,0,0,0,0,0,0,0];
+    
 
     return True;
 
