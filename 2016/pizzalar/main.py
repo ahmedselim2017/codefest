@@ -1,6 +1,8 @@
 #Euzubillahiminesseydanirracim Bismillahirrahmanirrhim
 import sys;
 
+## BUG: BUYUK SAYILARDA TIMEOUT HATASI
+
 """
 def oku():
     dizi = [];
@@ -57,5 +59,5 @@ def coz(dizii, ikinciBinaa):
     return enIyiDurum;
 
 a = [2, 3, 5];
-enIyiDurum = coz(a,link(a));
+enIyiDurum = coz(a,list(a));
 print enIyiDurum[0];
