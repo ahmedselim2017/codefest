@@ -1,7 +1,7 @@
 #Euzubillahiminesseydanirracim Bismillahirrahmanirrhim
 import sys;
 
-## BUG: BUYUK SAYILARDA TIMEOUT HATASI
+## BUG: BUYUK SAYILARDA TIMEOUT HATASI JAVA DOSYASINA BAKIN
 
 """
 def oku():
