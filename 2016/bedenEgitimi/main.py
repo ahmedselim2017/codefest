@@ -16,12 +16,14 @@ dizi = oku();
 """
 
 
-## BUG: Büyük Sayılarda Time Out Veriyor
 def coz(dizi):
     if (dizi[0] < dizi[1]) or (dizi[0] == 0) or (dizi[1] == 0) or (not ((dizi[0] / dizi[1]).is_integer())):
         return -1, False;
     saniye = math.log(dizi[0] / dizi[1],2);
     mumkunMu = saniye.is_integer();
+    print 2**int(saniye);
+    if  2**int(saniye) * dizi[1] == dizi[0]:
+        return int(saniye), True
 
     return int(saniye), mumkunMu ;
 
@@ -29,7 +31,7 @@ def coz(dizi):
 
 
 
-saniye,mumkunMu = coz([80,10]);
+saniye,mumkunMu = coz([1152921504606846976,4]);
 if mumkunMu:
     print "MUMKUN";
     print saniye;
